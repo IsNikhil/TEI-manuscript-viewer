@@ -80,7 +80,7 @@ This project demonstrates the same XML/TEI + XSLT + PHP transformation pipeline 
 
 ## Author
 
-**Nikhil Shah** — Built to demonstrate proficiency with the Digital Humanities tech stack for the SELU English Department student worker position.
+**Nikhil Shah** — Built to demonstrate proficiency with the Digital Humanities tech stack
 
 ## License
 
