@@ -1,0 +1,24 @@
+{
+    "name": "nikhil-shah/tei-manuscript-viewer",
+    "description": "A PHP web app that transforms TEI/XML manuscripts into styled HTML using XSLT — Digital Humanities demo",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nikhil Shah",
+            "email": "nikhilkrsha@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-xsl": "*",
+        "ext-dom": "*",
+        "ext-libxml": "*"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    },
+    "scripts": {
+        "serve": "php -S localhost:8000 -t public"
+    }
+}

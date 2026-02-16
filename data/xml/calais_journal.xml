@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Journal of a Tour through France</title>
+                <title type="sub">Calais</title>
+                <author>
+                    <persName>
+                        <forename>John</forename>
+                        <surname>Ruskin</surname>
+                    </persName>
+                </author>
+                <editor>
+                    <persName>Sample Editor</persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>TEI Manuscript Viewer Demo</publisher>
+                <date when="2026-02-16">February 16, 2026</date>
+                <availability>
+                    <licence target="https://opensource.org/licenses/MIT">MIT License</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>New Haven</settlement>
+                        <repository>Beinecke Rare Book and Manuscript Library, Yale University</repository>
+                        <idno>MS IX</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <title>Journal of a Tour through France</title>
+                            <note>A youthful travel journal composed during the Ruskin family's 1833 Continental tour.</note>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc form="notebook">
+                            <supportDesc>
+                                <extent>Approximately 60 pages</extent>
+                            </supportDesc>
+                        </objectDesc>
+                        <handDesc hands="1">
+                            <handNote xml:id="jr" medium="ink">John Ruskin, juvenile hand in ink.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origDate notBefore="1833" notAfter="1834">1833&#x2013;1834</origDate>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>This file is a demonstration of TEI encoding for a manuscript viewer application,
+                inspired by the Early Ruskin Manuscripts project at Southeastern Louisiana University.</p>
+            </projectDesc>
+            <editorialDecl>
+                <p>Transcription follows diplomatic principles: original spelling, punctuation,
+                and lineation are preserved. Editorial interventions are marked with appropriate TEI elements.</p>
+            </editorialDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docTitle>
+                    <titlePart type="main">Journal of a Tour through France</titlePart>
+                </docTitle>
+                <docAuthor>John Ruskin</docAuthor>
+                <docDate when="1833">1833</docDate>
+            </titlePage>
+        </front>
+        <body>
+            <div type="chapter" n="1">
+                <head>Calais</head>
+                <p>
+                    <date when="1833-05-14">Tuesday, May 14th, 1833</date>.
+                    We arrived at <placeName ref="#calais">Calais</placeName> after a passage
+                    of considerable roughness, the sea being in a state of great agitation.
+                    The <geogName>English Channel</geogName>, which had seemed so narrow upon the map,
+                    proved itself a formidable barrier when crossed in person.
+                </p>
+                <p>
+                    The town of <placeName ref="#calais">Calais</placeName> presented itself
+                    with all the novelty of a foreign land. The houses, built of a grey stone
+                    quite unlike our <placeName ref="#london">London</placeName> brick, rose in
+                    irregular lines along the quay. The <hi rend="italic">douane</hi> officers
+                    examined our luggage with the most <del rend="strikethrough">tedious</del>
+                    <add place="above">meticulous</add> attention to detail.
+                </p>
+                <p>
+                    The <placeName ref="#hotel-dessein">Hotel Dessein</placeName>, where we took
+                    our lodging, was a building of some antiquity and considerable reputation
+                    among English travellers. <persName ref="#sterne">Sterne</persName> had
+                    <sic>staid</sic><corr>stayed</corr> here, and the memory of his
+                    <title level="m">Sentimental Journey</title> gave the place an air of
+                    literary distinction.
+                </p>
+                <lg type="poem">
+                    <head>Lines Written at Calais</head>
+                    <lg type="stanza">
+                        <l>The waves upon the foreign shore</l>
+                        <l rend="indent">Did break with unfamiliar sound,</l>
+                        <l>And all the landscape spread before</l>
+                        <l rend="indent">Was new and strange, yet sweetly found.</l>
+                    </lg>
+                    <lg type="stanza">
+                        <l>The spires of Calais caught the light</l>
+                        <l rend="indent">Of evening in a golden haze,</l>
+                        <l>And promised to our eager sight</l>
+                        <l rend="indent">The wonders of the coming days.</l>
+                    </lg>
+                </lg>
+                <p>
+                    We walked through the old town in the evening, observing the
+                    <term xml:lang="fr">place d&#x2019;armes</term> and the fortifications
+                    which had once withstood the siege of
+                    <persName ref="#edward-iii">Edward III</persName> in
+                    <date when="1347">1347</date>. The walls, though much reduced from their
+                    former strength, still conveyed an impression of medieval solidity.
+                </p>
+            </div>
+            <div type="chapter" n="2">
+                <head>On the Road to Paris</head>
+                <p>
+                    <date when="1833-05-15">Wednesday, May 15th</date>. We departed
+                    <placeName ref="#calais">Calais</placeName> early in the morning by
+                    <hi rend="italic">diligence</hi>, the great lumbering coach of the
+                    French roads. The countryside of <region>Picardy</region> unfolded itself
+                    in long flat stretches of farmland, punctuated by rows of
+                    <term>Lombardy poplars</term> that stood like sentinels along every road.
+                </p>
+                <p>
+                    At <placeName ref="#boulogne">Boulogne</placeName> we paused briefly.
+                    The cliff scenery reminded me of our own
+                    <geogName>Dover cliffs</geogName>, though the geological formations
+                    <note type="gloss">Ruskin's early interest in geology is evident throughout
+                    the journal, prefiguring his later scientific writings.</note> showed
+                    distinct differences in their stratification. I made several
+                    <term>sketches</term> in my notebook, attempting to capture the arrangement
+                    of the chalk layers.
+                </p>
+                <p>
+                    The road to <placeName ref="#paris">Paris</placeName> stretched before us,
+                    and with it the promise of <gap reason="illegible" extent="2" unit="words"/>
+                    adventures yet to come. My father spoke of the
+                    <placeName ref="#louvre">Louvre</placeName> with such enthusiasm that I
+                    could scarcely contain my <del rend="strikethrough">excitement</del>
+                    <add place="above">anticipation</add>.
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="notes">
+                <note xml:id="n1">
+                    <label>Editorial Note</label>: This text is a creative demonstration
+                    inspired by the style and format of John Ruskin's early travel journals.
+                    It is not an actual transcription of Ruskin's manuscripts.
+                </note>
+            </div>
+        </back>
+    </text>
+</TEI>

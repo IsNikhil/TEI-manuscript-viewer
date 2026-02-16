@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Early Notes on Venetian Architecture</title>
+                <title type="sub">Observations on St. Mark's and the Ducal Palace</title>
+                <author>
+                    <persName>
+                        <forename>John</forename>
+                        <surname>Ruskin</surname>
+                    </persName>
+                </author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>TEI Manuscript Viewer Demo</publisher>
+                <date when="2026-02-16">February 16, 2026</date>
+                <availability>
+                    <licence target="https://opensource.org/licenses/MIT">MIT License</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>New Haven</settlement>
+                        <repository>Beinecke Rare Book and Manuscript Library, Yale University</repository>
+                        <idno>MS VII</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <title>Early Notes on Venetian Architecture</title>
+                            <note>Youthful observations composed during the Ruskin family's Italian travels, demonstrating early architectural interests.</note>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc form="notebook">
+                            <supportDesc>
+                                <extent>Approximately 35 pages</extent>
+                            </supportDesc>
+                        </objectDesc>
+                        <handDesc hands="1">
+                            <handNote xml:id="jr" medium="ink">John Ruskin, juvenile hand in ink with occasional pencil annotations.</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origDate notBefore="1835" notAfter="1836">1835&#x2013;1836</origDate>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Demonstration TEI encoding for the manuscript viewer application.</p>
+            </projectDesc>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="chapter" n="1">
+                <head>First Impressions of Venice</head>
+                <p>
+                    <date when="1835-10-09">October 9th, 1835</date>. Nothing that I had read,
+                    nothing that I had imagined, could have prepared me for the reality of
+                    <placeName ref="#venice">Venice</placeName>. The city rose from the water
+                    as if conjured by some enchantment, her palaces and churches reflected in
+                    the still surface of the <geogName>lagoon</geogName> with a perfection
+                    that seemed to double every beauty.
+                </p>
+                <p>
+                    We approached by <hi rend="italic">gondola</hi>, and as we turned into the
+                    <placeName ref="#grand-canal">Grand Canal</placeName>, the
+                    <placeName ref="#palazzo-ducale">Ducal Palace</placeName> came into view.
+                    Its arcade of pointed arches, resting upon columns of
+                    <term>Istrian stone</term>, presented a harmony of proportion that I had
+                    never before witnessed in any building. The upper wall, clad in a pattern
+                    of <del rend="strikethrough">pink and grey</del>
+                    <add place="above">rose and pearl-white</add> marble, caught the
+                    afternoon light in a manner that defied <gap reason="illegible" extent="1" unit="words"/>
+                    description.
+                </p>
+            </div>
+            <div type="chapter" n="2">
+                <head>The Mosaics of St. Mark&#x2019;s</head>
+                <p>
+                    The <placeName ref="#st-marks">Basilica of St. Mark</placeName> is unlike
+                    any church in <placeName ref="#england">England</placeName>. Where our
+                    cathedrals achieve their effect through height and the aspiration of the
+                    <term>Gothic pointed arch</term>, St. Mark&#x2019;s achieves its power through
+                    colour and surface. Every wall, every vault, every dome is covered with
+                    <term>mosaic</term> of gold and glass, depicting the stories of Scripture
+                    with a vividness that no stained glass window could equal.
+                </p>
+                <p>
+                    I observed with particular interest the
+                    <term xml:lang="it">capitelli</term> of the exterior columns.
+                    <note type="gloss">Ruskin's detailed study of Venetian column capitals
+                    would later form a major section of <title level="m">The Stones of Venice</title>
+                    (1851&#x2013;1853).</note>
+                    Each capital told its own story in carved stone: here a scene of
+                    the months and their labours, there the virtues and vices arrayed in
+                    allegorical combat. The craftsmanship was of the highest order, yet bore
+                    the marks of individual hands rather than mechanical reproduction.
+                </p>
+                <lg type="poem">
+                    <head>On Seeing Venice</head>
+                    <lg type="stanza">
+                        <l>A city built upon the waters deep,</l>
+                        <l rend="indent">Where marble walls embrace the rising tide,</l>
+                        <l>And ancient stones their solemn vigil keep</l>
+                        <l rend="indent">O&#x2019;er glories that the centuries cannot hide.</l>
+                    </lg>
+                </lg>
+                <p>
+                    The <sic>colour</sic><corr>colour</corr> of the stone, particularly in
+                    the late afternoon, transforms from white to the warmest gold, as if the
+                    building itself were alive to the passage of the sun. I made three separate
+                    <term>watercolour studies</term> attempting to fix this effect, but the
+                    medium proved <del rend="strikethrough">entirely</del>
+                    <add place="above">wholly</add> inadequate to the task.
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>
