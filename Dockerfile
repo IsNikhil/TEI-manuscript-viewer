@@ -5,6 +5,9 @@ RUN apt-get update && apt-get install -y libxslt1-dev --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && docker-php-ext-install xsl
 
+# Fix MPM conflict: disable event, keep prefork (required for mod_php)
+RUN a2dismod mpm_event && a2enmod mpm_prefork
+
 # Enable mod_rewrite so .htaccess routing works
 RUN a2enmod rewrite
 
