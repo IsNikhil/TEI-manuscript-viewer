@@ -2,5 +2,4 @@
 builder = "dockerfile"
 
 [deploy]
-startCommand = "apache2-foreground"
 healthcheckPath = "/"
