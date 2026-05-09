@@ -1,26 +1,17 @@
 FROM php:8.2-apache
 
-# Install system deps for ext-xsl, then enable PHP extensions
 RUN apt-get update && apt-get install -y libxslt1-dev --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && docker-php-ext-install xsl
 
-# Fix MPM conflict: disable event, keep prefork (required for mod_php)
-RUN a2dismod mpm_event && a2enmod mpm_prefork
+RUN a2dismod mpm_event && a2enmod mpm_prefork rewrite
 
-# Enable mod_rewrite so .htaccess routing works
-RUN a2enmod rewrite
+# Point document root to the /public subfolder
+RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|' \
+        /etc/apache2/sites-available/000-default.conf
 
-# Set document root to /public
-ENV APACHE_DOCUMENT_ROOT /var/www/html/public
-
-RUN sed -ri 's|/var/www/html|${APACHE_DOCUMENT_ROOT}|g' \
-        /etc/apache2/sites-available/000-default.conf \
-    && sed -ri 's|/var/www/html|${APACHE_DOCUMENT_ROOT}|g' \
-        /etc/apache2/apache2.conf
-
-# Allow .htaccess overrides
-RUN sed -ri 's|AllowOverride None|AllowOverride All|g' /etc/apache2/apache2.conf
+# Allow .htaccess overrides (needed for the PHP router)
+RUN sed -i 's|AllowOverride None|AllowOverride All|g' /etc/apache2/apache2.conf
 
 COPY . /var/www/html
 
